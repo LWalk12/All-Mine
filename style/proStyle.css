@@ -1,0 +1,19 @@
+nav ul{
+    text-align: center;
+    list-style: none;
+    background-color: darkorchid;
+    background-size: contain;
+    background-position: top;
+    background-blend-mode: overlay;
+}
+
+nav li{
+    display: inline-table;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav li a{
+    color: orange;
+    text-decoration: none;
+}
