@@ -1,10 +1,11 @@
-* {
+body {
     background-image: url('skulls.jpg');
     background-size: auto;
     background-position: center;
     background-repeat: repeat;
 }
-* {
+
+*{
   margin:0;
   padding:0;
 }
@@ -48,14 +49,39 @@ span.text {
 #bgNum {
   font-weight: bold;
   color: var(--accent-3);
+}*//
+
+nav{
+    text-align: center;
+    list-style: none;
+}
+
+nav ul{
+    text-align: center;
+    list-style: none;
+    background-color: darkorchid;
+    background-size: auto;
+    background-position: top;
+    background-blend-mode: saturation;
+}
+
+nav li{
+    display: inline-table;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav li a{
+    color: orange;
+    text-decoration: none;
 }
 
 header{
     background-color: darkgray;
     color: aqua;
-    background-blend-mode: overlay;
+    background-blend-mode: color;
     text-align: center;
-    background-size: contain
+    background-size: contain;
 }
 header img{
     width: auto;
@@ -65,6 +91,6 @@ header img{
 footer p{
     text-align: center;
     background-color: darkgray;
-    background-blend-mode: saturation;
+    background-blend-mode: overlay;
     color: aqua;
 }
