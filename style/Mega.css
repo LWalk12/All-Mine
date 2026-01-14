@@ -5,62 +5,22 @@ body {
     background-repeat: repeat;
 }
 
-*{
-  margin:0;
-  padding:0;
+body{
+    margin-left: 50px;
+    margin-right: 50px;
 }
-.intro {
-  padding:35px;
-}
-.text {
-    background-color:white;
-}
-span.text {
-  padding:10px;
-  margin-bottom:10px;
-  margin-top:10px;
-  display:inline-block;
-}
-#bg {
-  background-repeat:repeat;
-}
-
-#bgs {
-  padding: 25px;
-    max-width:600px;
-  margin:0 auto;
-}
-
-#bgs > div {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-#bgs > div img {
-  width: 75px;
-  height: 75px;
-}
-
-#bg {
-  background-size: auto;
-}
-
-#bgNum {
-  font-weight: bold;
-  color: var(--accent-3);
-}*//
 
 nav{
-    text-align: center;
+    margin-top: 0;
     list-style: none;
 }
 
 nav ul{
+    padding: 10px;
     text-align: center;
     list-style: none;
     background-color: darkorchid;
-    background-size: auto;
+    background-size: contain;
     background-position: top;
     background-blend-mode: saturation;
 }
@@ -73,10 +33,11 @@ nav li{
 
 nav li a{
     color: orange;
-    text-decoration: none;
+    text-decoration:underline;
 }
 
 header{
+    padding-top: 0px;
     background-color: darkgray;
     color: aqua;
     background-blend-mode: color;
@@ -88,7 +49,17 @@ header img{
     height: auto;
 }
 
-footer p{
+main {
+    color: white;
+    text-align: center;
+    background-color: coral;
+    
+}
+
+footer {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
     text-align: center;
     background-color: darkgray;
     background-blend-mode: overlay;
