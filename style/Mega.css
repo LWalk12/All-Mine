@@ -6,8 +6,8 @@ body {
 }
 
 body{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 nav{
@@ -37,7 +37,7 @@ nav li a{
 }
 
 header{
-    padding-top: 0px;
+    padding-top: 1%;
     background-color: darkgray;
     color: aqua;
     background-blend-mode: color;
