@@ -1,10 +1,10 @@
-import { animate, utils, createDraggable, spring } from 'animejs';
-import { animate } from './animejs/dist/bundles/anime.esm.min.js';
+import { animate, utils, createDraggable, spring } from './node_modules/animejs/dist/bundles/anime.esm.js';
+//import { animate } from './animejs/dist/bundles/anime.esm.min.js';
 
-cosnt [$logo] = utils.$('.funky.js');
+cosnt [$logo] = utils.$('.logo.js');
 const [ $button ] = utils.$('button');
 
-animate('.funky.js', {
+animate('.logo.js', {
   scale: [
     { to: 1.25, ease: 'inOut(3)', duration: 200 },
     { to: 1, ease: spring({ bounce: .7 }) }
