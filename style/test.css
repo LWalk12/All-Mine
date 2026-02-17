@@ -6,6 +6,31 @@
     src: url(https://cdn.jsdelivr.net/fontsource/fonts/bruno-ace-sc@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/bruno-ace-sc@latest/latin-400-normal.woff) format('woff');
     unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
+/* space-grotesk-latin-400-normal */
+@font-face {
+  font-family: 'NAV';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/space-grotesk@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/space-grotesk@latest/latin-400-normal.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face {
+  font-family: 'OS2';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/workbench@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/workbench@latest/latin-400-normal.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+/*Sub-header font*/
+@font-face {
+    font-family: 'sub_header';
+    src: url('Fonts/american-gothic.otf') format('OpenType');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 *{
     box-sizing: border-box;
@@ -15,43 +40,69 @@
     max-width: 100%;
 }
 
+
+
 header{
     position: static;
     padding-left: 15px;
     padding-right: 15px;
     background-color: teal;
-    max-width:100%;
-    text-align: left;
+    width:100%;
+    height: auto;
+    /*text-align: center;*/
     margin: 0;
-    overflow-x: hidden;
+    display: inline-block;
+}
+
+header svg{
+    align-items: left;
+    width: 12%;
+    margin:0;
+}
+header nav{
+    display: block;
+    width: 88%;
+    text-align: right;
+    padding: 15px;
 }
 
 svg{
-    max-width: 10%;
     display: block;
+    max-width: 100%;
 }
 
 nav{
+    font-family: 'nav';
+    align-items: right;
     padding: 15px;
     background-color: wheat;  
     list-style: none;
+    text-align:right;
 }
 
 nav ul{
-    list-style: none;
-    text-decoration: none;
+    align-items: right;
+    display: inline-block;
+    text-align: right;
 }
-
 
 nav li{
     padding: 10px;
-    float: left;
+    align-items: right;
 }
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+
 
 body{
     background-color: transparent;
     background-image: url("stars 2.gif");
     background-repeat: repeat;
+    height: 100%;
 }
 
 main{
@@ -61,7 +112,7 @@ main{
     margin-left: 10%;
     margin-right: 10%;
     padding-top: 25px;
-    padding-bottom: 25px;
+    
 }
 
 main .bodyhead{
@@ -73,21 +124,75 @@ main .bodyhead{
     margin-left: 10%;
     margin-bottom: 30px;
     margin-top: 15px;
-    font-family: 'fancyTitle';
+    font-family: 'FancyTitle';
     letter-spacing: 50px;
-    font-size: 150%;
+    font-size: 400%;
     font-weight: 400;
 }
-main .body{
+
+main .info{
+    height: 100%;
     align-self: center;
     background-color: white;
     padding-left: 3%;
     padding-right: 3%;
 }
 
-main li{
+main .info h1{
+    font-family: 'OS2';
+    font-size: 300%;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main .section_title{
+    padding: 5%;
+    font-size: 150%;
+    text-align: left;
+    font-family: 'sub_header';
+    border: 3px solid black;
+    margin-right: 484px;
+}
+
+button{
+    border: 5px solid gray;
+    background-color: blueviolet;
+    padding: 10px;
+    font-family: 'nav';
+    color: thistle;
+}
+button:hover{
+    background-color: thistle;
+    color: blueviolet;
+}
+
+
+table{
     display: inline-table;
     list-style: none;
     padding: 10px;
+    text-align: center;
 }
 
+table td{
+    padding: 10px;
+    align-items: center;
+    font: 400;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+footer{
+    background-color: violet;
+    padding: 25px;
+    font-size: 80%;
+}
+
+footer nav{
+    float: center;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
