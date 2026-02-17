@@ -49,7 +49,6 @@ header{
     background-color: teal;
     width:100%;
     height: auto;
-    /*text-align: center;*/
     margin: 0;
     display: inline-block;
 }
@@ -60,9 +59,10 @@ header svg{
     margin:0;
 }
 header nav{
-    display: block;
-    width: 88%;
-    text-align: right;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    float: right;
     padding: 15px;
 }
 
@@ -73,20 +73,22 @@ svg{
 
 nav{
     font-family: 'nav';
-    align-items: right;
+    /*align-items: right;*/
     padding: 15px;
     background-color: wheat;  
     list-style: none;
     text-align:right;
+    /*float:right;*/
 }
 
 nav ul{
     align-items: right;
-    display: inline-block;
     text-align: right;
 }
 
 nav li{
+
+    display: inline-block;
     padding: 10px;
     align-items: right;
 }
@@ -152,17 +154,19 @@ main .section_title{
     text-align: left;
     font-family: 'sub_header';
     border: 3px solid black;
-    margin-right: 484px;
+    margin-right: 45%;
 }
 
 button{
-    border: 5px solid gray;
+   /* border: 5px solid gray;*/
     background-color: blueviolet;
     padding: 10px;
     font-family: 'nav';
     color: thistle;
 }
 button:hover{
+    border-bottom: 3px solid grey;
+    border-right: 3px solid grey;
     background-color: thistle;
     color: blueviolet;
 }
