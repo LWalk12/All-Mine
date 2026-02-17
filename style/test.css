@@ -62,7 +62,6 @@ header nav{
     display: inline-block;
     width: 50%;
     text-align: center;
-    float: right;
     padding: 15px;
 }
 
@@ -73,16 +72,14 @@ svg{
 
 nav{
     font-family: 'nav';
-    /*align-items: right;*/
     padding: 15px;
     background-color: wheat;  
     list-style: none;
-    text-align:right;
-    /*float:right;*/
+    text-align:center;
 }
 
 nav ul{
-    align-items: right;
+    float: right;
     text-align: right;
 }
 
@@ -96,6 +93,12 @@ nav li{
 nav li a{
     text-decoration: none;
     color: black;
+    padding: 5px;
+}
+
+nav li a:hover{
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
 }
 
 
@@ -163,6 +166,7 @@ button{
     padding: 10px;
     font-family: 'nav';
     color: thistle;
+    border: 3px solid transparent;
 }
 button:hover{
     border-bottom: 3px solid grey;
@@ -175,12 +179,13 @@ button:hover{
 table{
     display: inline-table;
     list-style: none;
-    padding: 10px;
     text-align: center;
+    padding: 10px;
+    font-size: 30px;
 }
 
 table td{
-    padding: 10px;
+    padding: 12px;
     align-items: center;
     font: 400;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
